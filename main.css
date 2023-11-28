@@ -1,0 +1,142 @@
+/* 
+Para estilizar um id usa-se:
+    #nomedoid
+Para estilizar uma classe, usa-se:
+    .nomedaclasse
+Caso eu queria ter uma formatação geral em toda a página, que não irá alterar tags já com estilização, usa-se::after
+*{}
+*/
+
+*{
+    box-sizing: border-box; /*deve respeitar as limitações de layout configuradas*/
+    margin: 0; /*O atributo margin não influencia na altura do elemento. Ele define o espaço entre o elemento e seus vizinhos. O atributo padding define o espaço entre o conteúdo do elemento e as bordas do elemento. O atributo border define a borda do elemento. O atributo height define a altura do elemento.*/
+    padding: 0;
+}/*Esse padrão acima serve para "resetar" as configurações pré estbelecidas pelo navegador, boas práticas deixar logo no início*/
+
+/*Essa tipologia serve para editar um elemento descentente de outro, no caso, do header que vem direto do body, assim outros headers não serão afetados*/
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+
+}
+
+header  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.article {
+    display:flex;
+    flex-wrap: wrap; /*Faz com que seja respeitada a largura escolhida para a disposição dos artigos*/
+    justify-content: space-between; /*Irá distribuir igualitariamente os espaços restantes, nesse caso os 10% que sobrou*/
+}
+
+.article article img{
+    /*height: 180px;Limitando tamanho das imagens a largura se ajeita sozinho*/
+    width: 100%;
+}
+
+.article article {
+    width: 30%; /*Irá distribuir os artigos em 30% na página*/
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.article article {
+    margin-bottom: 16px;
+}
+
+.article article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.article article a{
+    background-color: blue;
+    color:#fff; /*cor do do texto*/
+    padding: 8px; /*padding define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    display: inline-block; /*fara com que o conteúdo se alinhe*/
+    text-decoration: none; /*Neste caso irá remover a linha que vem a baixo dos links, já padrão da tag a*/
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.article article a:hover{ /*Usado para fazer algo ao passar o mouse em cima do local, nesse caso volta o underline do hyperlink*/
+    text-decoration: underline;
+}
+
+.article article p,
+.article article a {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.article article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .article article a{
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy .article article a{
+    background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color: #7dbaec;
+}
+
+#entertainment .article article a{
+    background-color: #1e1aff;
+}
+
+#technology {
+    background-color: rgb(235, 156, 169);
+}
+
+#technology .article article a{
+    background-color: rgb(202, 31, 68);
+}
+
+footer {
+    text-align: center;
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+/*É possível fixar um elemento na tela usando position: fixed; assim fara com que não importe como eu ande na tela, o elemento ficará sempre fixo*/
