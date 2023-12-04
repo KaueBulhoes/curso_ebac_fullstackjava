@@ -13,29 +13,41 @@
 
 <body>
     <header>
-        <div class="header-left">
+        <div id="header">
             <h1>Portfolio</h1>
         </div>
-            <nav class="header-right">
-                <ul>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#contact">Projetos</a></li>
-                </ul>
-                <ul class="idiomas">
-                    <li><a href=""></a><img src="./images/bandeira_brasil.png" alt="bandeira do brasil pequena"></li>
-                    <li><a href=""></a><img src="./images/bandeira_euA.png" alt="bandeira dos eua pequena"></li>
-                </ul>
-            </nav>
+        <nav id="idiomas">
+            <ul>
+                <li><a href=""></a><img src="./images/bandeira_brasil.png" alt="bandeira do brasil pequena"></li>
+                <li><a href=""></a><img src="./images/bandeira_euA.png" alt="bandeira dos eua pequena"></li>
+            </ul>
+        </nav>
+        <nav id="menu">
+            <ul>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#projects">Projetos</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="about">
         <div class="container">
-            <img class="store-font" src="./images/loja.jpg" alt="Fachada da loja Game Shop">
+            <img class="store-font" src="./images/kaue_sem_fundo.png" alt="Fachada da loja Game Shop">
             <div>
                 <h2>Sobre mim</h2>
                 <p>Prazer! Meu nome é Kauê Bulhões, sou da cidade de Natal/RN. Atualmente sou estudante de engenharia civil do 9° semestre da UFRN.</p>
+                <p>Estou em transição de carreira para área da programação para começar assim que concluir meu curso.</p>
             </div>
         </div>
+    </section>
+    <section id="projects">
+            <div class="container">
+                <h2>Projetos</h2>
+            </div>
+            <div class="container">
+                <h3>Em construção</h3>
+            </div>
     </section>
     <section id="contact">
         <div class="container">
@@ -43,7 +55,7 @@
             <div class="contact-methods">
                 <div>
                     <h3>Fale Conosco</h3>
-                    <form action="">
+                    <form action="mailto:kaue.bulhoes@hotmail.com">
                         <input type="text" placeholder="Seu Nome" required>
                         <input type="email" placeholder="Seu Email" required>
                         <input type="tel" placeholder="Seu telefone">
@@ -52,19 +64,15 @@
                     </form>
                 </div>
                 <div>
-                    <h3>Nos Acompanhe</h3>
+                    <h3>Me Acompanhe</h3>
                     <ul class="social-links">
                         <li>
-                            <a href="#" title="Siga-nos no Instagram"><img src="./images/instagram.png"
+                            <a href="https://www.instagram.com/kbulhoesg" title="Me siga no Instagram"><img src="./images/instagram.png"
                                     alt="logo do instagram"></a>
                         </li>
                         <li>
-                            <a href="#" title="Siga-nos no Facebook"><img src="./images/facebook.png"
-                                    alt="logo do facebook"></a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite-nos no Youtube"><img src="./images/youtube.png"
-                                    alt="logo do youtube"></a>
+                            <a href="https://github.com/KaueBulhoes/" title="Siga-nos no Facebook"><img src="./images/github.png"
+                                    alt="logo do github"></a>
                         </li>
                     </ul>
                 </div>
