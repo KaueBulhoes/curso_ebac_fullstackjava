@@ -66,6 +66,21 @@ section {
 .product-button:hover {
   background-color: #4cd137;
 }
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.social-links img {
+  transition: all ease 0.3s;
+}
+.social-links img:hover {
+  transform: scale(1.3);
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 80%;
