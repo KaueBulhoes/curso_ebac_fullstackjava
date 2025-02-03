@@ -1,0 +1,16 @@
+{
+  "name": "curso_ebac_fullstackjava",
+  "version": "1.0.0",
+  "description": "Repositório do curso Full Stack Java",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}
